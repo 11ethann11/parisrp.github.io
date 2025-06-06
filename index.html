@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris RP FR (ERLC)</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d1117; color: #c9d1d9; }
+        html { scroll-behavior: smooth; }
+        .title-glow { text-shadow: 0 0 15px rgba(138, 43, 226, 0.5), 0 0 20px rgba(75, 0, 130, 0.4); }
+        .card { background-color: rgba(31, 41, 55, 0.3); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        #mobile-menu { transition: transform 0.3s ease-in-out; transform: translateX(100%); }
+        #mobile-menu.active { transform: translateX(0); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div id="site-content">
+        <header class="fixed top-0 left-0 right-0 bg-opacity-80 backdrop-blur-md z-40 border-b border-gray-800" style="background-color: rgba(13, 17, 23, 0.8);">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#accueil" class="nav-link flex items-center space-x-3">
+                    <img src="https://i.ibb.co/QnCgmnS/Paris-RP-FR.png" alt="Logo Paris RP FR" class="w-10 h-10 rounded-full object-cover border-2 border-indigo-500">
+                    <div><h1 data-key="site_title" class="font-bold text-white text-lg">Paris RP FR</h1><p data-key="site_subtitle" class="text-xs text-gray-400">ERLC</p></div>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#accueil" class="nav-link text-gray-300 hover:text-white transition">Accueil</a>
+                    <a href="#a-propos" class="nav-link text-gray-300 hover:text-white transition">À Propos</a>
+                    <a href="#reglement" class="nav-link text-gray-300 hover:text-white transition">Règles</a>
+                    <a href="#rejoindre" class="nav-link text-gray-300 hover:text-white transition">Nous Rejoindre</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-white transition">Contact</a>
+                </nav>
+                <div class="md:hidden"><button id="hamburger-btn" class="text-white focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+            </div>
+        </header>
+
+        <div id="mobile-menu" class="fixed top-0 right-0 h-full w-full max-w-xs bg-gray-900 z-50 p-6">
+             <div class="flex justify-between items-center mb-10">
+                 <div class="flex items-center space-x-3">
+                    <img src="https://i.ibb.co/QnCgmnS/Paris-RP-FR.png" alt="Logo Paris RP FR" class="w-10 h-10 rounded-full object-cover border-2 border-indigo-500">
+                    <div><h1 class="font-bold text-white text-lg">Paris RP FR</h1><p class="text-xs text-gray-400">ERLC</p></div>
+                </div>
+                <button id="close-menu-btn" class="text-white"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+             </div>
+             <nav class="flex flex-col space-y-6">
+                <a href="#accueil" class="nav-link text-gray-300 hover:text-white transition text-lg flex items-center space-x-3"><span>Accueil</span></a>
+                <a href="#a-propos" class="nav-link text-gray-300 hover:text-white transition text-lg flex items-center space-x-3"><span>À Propos</span></a>
+                <a href="#reglement" class="nav-link text-gray-300 hover:text-white transition text-lg flex items-center space-x-3"><span>Règles</span></a>
+                <a href="#rejoindre" class="nav-link text-gray-300 hover:text-white transition text-lg flex items-center space-x-3"><span>Nous Rejoindre</span></a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-white transition text-lg flex items-center space-x-3"><span>Contact</span></a>
+             </nav>
+        </div>
+        
+        <main class="pt-24 md:pt-32">
+            <div class="container mx-auto px-6">
+                <section id="accueil" class="page-section min-h-[80vh] flex flex-col justify-center">
+                    <div class="text-center">
+                        <h2 data-key="home_title" class="text-4xl md:text-6xl font-extrabold text-white mb-4 title-glow">Bienvenue sur Paris RP FR</h2>
+                        <p data-key="home_subtitle" class="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-8">Plongez dans une version de Paris recréée sur Roblox dans "Emergency Response: Liberty County". Vivez une expérience RolePlay unique, rejoignez nos services d'urgence ou créez votre propre voie.</p>
+                        <div class="mt-20 md:mt-32">
+                            <h3 data-key="community_section_title" class="text-3xl md:text-4xl font-bold text-white mb-12 title-glow text-center">Pourquoi Notre Communauté ERLC ?</h3>
+                            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                                <div class="card p-8 rounded-2xl text-center">
+                                    <h4 data-key="card1_title" class="text-xl font-bold text-white mb-2">Communauté Active sur Roblox</h4>
+                                    <p data-key="card1_text" class="text-gray-400">Rejoignez des joueurs passionnés d'ERLC et partagez des expériences uniques à Paris.</p>
+                                </div>
+                                <div class="card p-8 rounded-2xl text-center">
+                                    <h4 data-key="card2_title" class="text-xl font-bold text-white mb-2">Serveur Privé Dédié</h4>
+                                    <p data-key="card2_text" class="text-gray-400">Profitez d'un environnement de jeu optimisé et d'événements réguliers sur notre serveur privé ERLC.</p>
+                                </div>
+                                <div class="card p-8 rounded-2xl text-center">
+                                    <h4 data-key="card3_title" class="text-xl font-bold text-white mb-2">RolePlay Sérieux et Encadré</h4>
+                                    <p data-key="card3_text" class="text-gray-400">Un staff dédié assure le respect des règles pour un RP de qualité et immersif.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="a-propos" class="page-section min-h-[70vh] py-20 hidden">
+                    <div class="max-w-3xl mx-auto">
+                        <h2 data-key="about_title" class="text-4xl md:text-5xl font-extrabold text-white mb-8 title-glow text-center">À Propos de Paris RP FR (ERLC)</h2>
+                        <div class="card p-8 rounded-2xl"><div data-key="about_content" class="space-y-4 text-lg leading-relaxed text-gray-300"><p>Paris RP FR est une communauté francophone sur le jeu <strong class="text-white">Emergency Response: Liberty County (ERLC)</strong> de Roblox. Notre but est d'offrir une expérience de RolePlay immersive et de qualité dans un cadre parisien adapté à ERLC.</p></div></div>
+                    </div>
+                </section>
+                 <section id="reglement" class="page-section min-h-[70vh] py-20 hidden">
+                     <div class="max-w-4xl mx-auto">
+                        <h2 data-key="rules_title" class="text-4xl md:text-5xl font-extrabold text-white mb-8 title-glow text-center">Règlement du Serveur (ERLC)</h2>
+                         <div class="card p-8 rounded-2xl"><div data-key="rules_content" class="space-y-6 text-gray-300 leading-relaxed"><p>Pour une expérience de jeu RolePlay de qualité, un règlement strict est en place. Voici les points clés :</p><ul class="space-y-4 list-disc list-inside"><li><strong class="text-white">Respect Absolu :</strong> Politesse et respect envers tous.</li><li><strong class="text-white">Fair-Play et Anti-Triche :</strong> L'utilisation de cheats est interdite.</li></ul></div></div>
+                    </div>
+                </section>
+                <section id="rejoindre" class="page-section min-h-[70vh] py-20 hidden">
+                     <div class="max-w-3xl mx-auto">
+                         <h2 data-key="join_title" class="text-4xl md:text-5xl font-extrabold text-white mb-8 title-glow text-center">Comment Nous Rejoindre ?</h2>
+                         <div class="card p-8 rounded-2xl"><div data-key="join_content" class="space-y-6 text-gray-300 leading-relaxed"><p>Rejoindre Paris RP FR est facile ! Voici les étapes :</p><ol class="list-decimal list-inside space-y-4"><li><strong class="text-white">Avoir un Compte Roblox & ERLC.</strong></li><li><strong class="text-white">Rejoindre notre Serveur Discord :</strong> C'est indispensable ! <strong class="text-indigo-400">Lien : [VOTRE LIEN DISCORD ICI]</strong></li></ol></div></div>
+                    </div>
+                </section>
+                <section id="contact" class="page-section min-h-[70vh] py-20 hidden">
+                    <div class="max-w-3xl mx-auto">
+                        <h2 data-key="contact_title" class="text-4xl md:text-5xl font-extrabold text-white mb-8 title-glow text-center">Nous Contacter</h2>
+                        <div class="card p-8 rounded-2xl"><div data-key="contact_content" class="space-y-6 text-gray-300 leading-relaxed"><ul class="space-y-4"><li><strong class="text-white">Serveur Discord (Méthode Principale) :</strong> C'est le meilleur moyen de nous joindre.</li></ul></div></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="mt-20 py-8 border-t border-gray-800">
+             <div class="container mx-auto px-6 text-center text-gray-500">
+                <p data-key="footer_copyright">&copy; 2025 Paris RP FR (ERLC). Tous droits réservés.</p>
+                <p data-key="footer_disclaimer" class="text-sm mb-4">Communauté non affiliée à Roblox Corporation ou aux créateurs de ERLC.</p>
+                <a href="admin.html" target="_blank" class="text-xs text-gray-700 hover:text-gray-500 transition">Admin</a>
+            </div>
+        </footer>
+    </div>
+    
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+        import { getFirestore, doc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCHxZvMq227zpskRJi4oCANh1T1Yq3MAjU",
+            authDomain: "parisrpfr-roblox.firebaseapp.com",
+            projectId: "parisrpfr-roblox",
+            storageBucket: "parisrpfr-roblox.firebasestorage.app",
+            messagingSenderId: "282300950781",
+            appId: "1:282300950781:web:0a3d9eeeb58563dbe43694",
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const allEditableElements = document.querySelectorAll('[data-key]');
+        const contentRef = doc(db, "websiteContent", "mainPage");
+
+        onSnapshot(contentRef, (doc) => {
+            if (doc.exists()) {
+                const content = doc.data();
+                allEditableElements.forEach(el => {
+                    const key = el.dataset.key;
+                    if (content[key] !== undefined) {
+                        el.innerHTML = content[key];
+                    }
+                });
+            }
+        });
+
+        const allNavLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('.page-section');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        const showSection = (hash) => {
+            const targetId = hash ? hash.substring(1) : 'accueil';
+            sections.forEach(section => {
+                section.id === targetId ? section.classList.remove('hidden') : section.classList.add('hidden');
+            });
+            window.scrollTo(0, 0);
+        };
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetHash = link.getAttribute('href');
+                history.pushState(null, null, targetHash);
+                showSection(targetHash);
+                mobileMenu.classList.remove('active');
+            });
+        });
+        window.addEventListener('popstate', () => showSection(window.location.hash));
+        showSection(window.location.hash);
+
+        document.getElementById('hamburger-btn').addEventListener('click', () => mobileMenu.classList.add('active'));
+        document.getElementById('close-menu-btn').addEventListener('click', () => mobileMenu.classList.remove('active'));
+    </script>
+</body>
+</html>
+
